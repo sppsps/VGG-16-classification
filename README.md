@@ -4,5 +4,5 @@ A) Dividing all the pixels of images by 225
 B) Converting y_train(labels) into float type.
 C) Using to_categorical() on training labels to use categorical loss as the loss function while training.
 
-#Architecture 
+## Architecture 
 
