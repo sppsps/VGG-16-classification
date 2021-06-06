@@ -51,4 +51,6 @@ def vgg_model():
   metrics = ['accuracy']
   )
   return model
+my_model = vgg_model()
+my_model.summary()
 
