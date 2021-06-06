@@ -3,7 +3,11 @@
 
 # In[ ]:
 
-
+import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras import layers
+from tensorflow.keras.utils import to_categorical
+import matplotlib.pyplot as plt
 class LossHistory(keras.callbacks.Callback):
     def on_train_begin(self, logs={}):
         self.losses = []
