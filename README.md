@@ -79,4 +79,7 @@ _________________________________________________________________<br/>
 activation (Activation)      (None, 10)                0         <br/>
 _________________________________________________________________<br/>
 
-So in the end, we get a softmax layer with 10 units of output.
+So in the end, we get a softmax layer with 10 units of output which will be used to train with the labels.
+## Training
+For training this model, mini-batch gradient descent optimizer is used, with learning rate 0.01 and momentum 0.9. Categorical loss Function is used as the loss function, batch size of 64, and I ran it for 50 epochs, resulting in training accuracy of 83%, validation accuracy of 73%. An ealry stop can also be used with regard to validation loss.
+Finalle, I have plotted the accuracy vs epochs with loss function which is shown using matplotlib.pyplot in the loss_plot.py script
