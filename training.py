@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
@@ -43,12 +38,13 @@ def training(args):
         def on_batch_end(self, batch, logs={}):
             self.losses.append(logs.get('loss'))
             self.val_losses.append(logs.get('val_loss'))
-    history1 = LossHistory()
+    history_loss = LossHistory()
     earlyStopping = keras.callbacks.EarlyStopping(monitor='val_loss', verbose=0, mode='min', patience = args.patience)
     mcp_save = keras.callbacks.ModelCheckpoint('vgg16_1.h5', save_best_only=True, monitor='val_acc', mode='max')
     my_model = vgg_model(args.learning_rate, args.momentum, args.regularizer, args.dropout)
     history = my_model.fit(
         x_train,y_train,batch_size = args.batch_size, epochs = args.epoch, validation_data = (x_test,y_test), callbacks = [mcp_save,earlyStopping]
     )
+    return history, history_loss
 args, unknown = parser.parse_known_args()
-training(args)
+history, history_loss  = training(args)
