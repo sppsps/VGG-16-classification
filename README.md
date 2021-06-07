@@ -18,7 +18,7 @@ optional arguments:<br/>
   --regularization REGULARIZATION
                         Regularization value for L2<br/>
 ## Contributers:
-- Pranjal Sharma
+- [Pranjal Sharma](https://github.com/sppsps)
 - [Dhrubajit Basumatary](https://github.com/dhruvz9)
 
 ## REFERENCE
