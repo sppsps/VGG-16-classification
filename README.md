@@ -1,8 +1,8 @@
 # Usage
-usage: ipykernel_launcher.py <br/>[-h] [--learning_rate LEARNING_RATE]<br/>
-                             [--dropout DROPOUT] [--regularizer REGULARIZER]<br/>
-                             [--epoch EPOCH] [--batch_size BATCH_SIZE]<br/>
-                             [--momentum MOMENTUM] [--patience PATIENCE]<br/>
+usage: ipykernel_launcher.py [-h] [--learning_rate LEARNING_RATE]<br/>
+                              &nbsp[--dropout DROPOUT] [--regularizer REGULARIZER]<br/>
+                              &nbsp[--epoch EPOCH] [--batch_size BATCH_SIZE]<br/>
+                              &nbsp[--momentum MOMENTUM] [--patience PATIENCE]<br/>
 optional arguments:
   -h, --help            show this help message and exit
   --learning_rate LEARNING_RATE
