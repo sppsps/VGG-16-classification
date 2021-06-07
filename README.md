@@ -92,7 +92,7 @@ _________________________________________________________________<br/>
 
 So in the end, we get a softmax layer with 10 units of output which will be used to train with the labels.
 
-## LOSS FUNCTION
+## Loss function
 Categorical crossentropy: It is a loss function that is used in multi-class classification tasks. These are tasks where an example can only belong to one out of many possible categories, and the model must decide which one.
 Formally, it is designed to quantify the difference between two probability distributions.
 
