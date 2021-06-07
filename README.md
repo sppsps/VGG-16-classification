@@ -1,18 +1,33 @@
-# TENSORFLOW IMPLEMENTATION OF VGG CLASSIFICATION
+# Usage
+usage: ipykernel_launcher.py [-h] [--learning_rate LEARNING_RATE]<br/>
+                             [--dropout DROPOUT] [--regularizer REGULARIZER]<br/>
+                             [--epoch EPOCH] [--batch_size BATCH_SIZE]<br/>
+                             [--momentum MOMENTUM] [--patience PATIENCE]<br/>
+optional arguments:
+  -h, --help            show this help message and exit
+  --learning_rate LEARNING_RATE
+                        learning rate for SGD
+  --epoch EPOCH     max # of epoch
+  --batch_size BATCH_SIZE
+                        # of batch size
+  --momentum MOMENTUM     momentum for SGD
+  --dropout DROPOUT
+                        Dropout percentage for the layers
+  --regularization REGULARIZATION
+                        Regularization value for L2
+  --patience PATIENCE
+                        Patience for earlystop
+# VGG-classification
+This model is implementing the architecture and training techniques used in VGG paper. We used CIFAR10 dataset by keras.<br />The preprocessing :<br />
+A) Dividing all the pixels of images by 225<br />
+B) Converting y_train(labels) into float type.<br />
+C) Using to_categorical() on training labels to use categorical loss as the loss function while training.<br />
 
 ## REFERENCE
   Title : Very Deep Convolutional Networks for Large-Scale Image Recognition <br />
   Link : https://arxiv.org/abs/1409.1556 <br />
   Author : Karen Simonyan, Andrew Zisserman <br />
   Published : 10 Apr 2015 <br />
-  
-# Summary
-  
-## Introduction
-This model is implementing the architecture and training techniques used in VGG paper. We used CIFAR10 dataset by keras.<br />The preprocessing :<br />
-A) Dividing all the pixels of images by 225<br />
-B) Converting y_train(labels) into float type.<br />
-C) Using to_categorical() on training labels to use categorical loss as the loss function while training.<br />
 
 
 ## Architecture 
@@ -92,7 +107,7 @@ _________________________________________________________________<br/>
 
 So in the end, we get a softmax layer with 10 units of output which will be used to train with the labels.
 
-## Loss function
+## LOSS FUNCTION
 Categorical crossentropy: It is a loss function that is used in multi-class classification tasks. These are tasks where an example can only belong to one out of many possible categories, and the model must decide which one.
 Formally, it is designed to quantify the difference between two probability distributions.
 
