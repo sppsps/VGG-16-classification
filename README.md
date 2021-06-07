@@ -123,5 +123,7 @@ Formally, it is designed to quantify the difference between two probability dist
 
 
 ## Training
-For training this model, mini-batch gradient descent optimizer is used, with learning rate 0.01 and momentum 0.9. Categorical loss Function is used as the loss function, batch size of 64, and I ran it for 50 epochs, resulting in training accuracy of 83%, validation accuracy of 73%. An ealry stop can also be used with regard to validation loss.
-Finalle, I have plotted the accuracy vs epochs with loss function which is shown using matplotlib.pyplot in the loss_plot.py script
+For training this model, mini-batch gradient descent optimizer is used, with learning rate 0.01 and momentum 0.9. Categorical loss Function is used as the loss function, batch size of 64, and ran it for 50 epochs, resulting in training accuracy of 83%, validation accuracy of 73%. An ealry stop can also be used with regard to validation loss.
+Finally, We have plotted the accuracy vs epochs with loss function which is shown using matplotlib.pyplot in the loss_plot.py script.
+
+
