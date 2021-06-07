@@ -119,6 +119,18 @@ Formally, it is designed to quantify the difference between two probability dist
 <p align="center">
   <img src="assets/loss.png" width="500">
   </p>
+  
+where \hat{y}_i 
+y
+^
+​
+  
+i
+​
+  is the ii-th scalar value in the model output, y_iy 
+i
+​
+  is the corresponding target value, and output size is the number of scalar values in the model output.
 
 ## Training
 For training this model, mini-batch gradient descent optimizer is used, with learning rate 0.01 and momentum 0.9. Categorical loss Function is used as the loss function, batch size of 64, and I ran it for 50 epochs, resulting in training accuracy of 83%, validation accuracy of 73%. An ealry stop can also be used with regard to validation loss.
