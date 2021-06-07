@@ -1,4 +1,6 @@
-# Usage
+# TENSORFLOW IMPLEMENTATION OF VGG CLASSIFICATION
+
+## Usage
 Usage: ipykernel_launcher.py [-h] [--learning_rate LEARNING_RATE]<br/>
                                 [--dropout DROPOUT] [--regularizer REGULARIZER]<br/>
                                 [--epoch EPOCH] [--batch_size BATCH_SIZE]<br/>
@@ -15,7 +17,7 @@ optional arguments:<br/>
                         Dropout percentage for the layers<br/>
   --regularization REGULARIZATION
                         Regularization value for L2<br/>
-# Contributers:
+## Contributers:
 - Pranjal Sharma
 - Dhrubajit Basumatary
 
@@ -110,7 +112,7 @@ _________________________________________________________________<br/>
 
 So in the end, we get a softmax layer with 10 units of output which will be used to train with the labels.
 
-## LOSS FUNCTION
+## Loss function
 Categorical crossentropy: It is a loss function that is used in multi-class classification tasks. These are tasks where an example can only belong to one out of many possible categories, and the model must decide which one.
 Formally, it is designed to quantify the difference between two probability distributions.
 
