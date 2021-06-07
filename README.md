@@ -4,6 +4,13 @@ A) Dividing all the pixels of images by 225<br />
 B) Converting y_train(labels) into float type.<br />
 C) Using to_categorical() on training labels to use categorical loss as the loss function while training.<br />
 
+## REFERENCE
+  Title : Very Deep Convolutional Networks for Large-Scale Image Recognition
+  Link : https://arxiv.org/abs/1409.1556
+  Author : Karen Simonyan, Andrew Zisserman
+  Published : 10 Apr 2015 
+
+
 ## Architecture 
 ![alt text](https://www.researchgate.net/profile/Clifford-Yang/publication/325137356/figure/fig2/AS:670371271413777@1536840374533/llustration-of-the-network-architecture-of-VGG-19-model-conv-means-convolution-FC-means.jpg)<br />
 This model is made for 224x224x3 images, but in this model, it is implemented on 32x32x3 images, so the learable parameters changed from 134 million to 43 million.
@@ -80,6 +87,11 @@ activation (Activation)      (None, 10)                0         <br/>
 _________________________________________________________________<br/>
 
 So in the end, we get a softmax layer with 10 units of output which will be used to train with the labels.
+
+##LOSS FUNCTION
+Categorical crossentropy: It is a loss function that is used in multi-class classification tasks. These are tasks where an example can only belong to one out of many possible categories, and the model must decide which one.
+Formally, it is designed to quantify the difference between two probability distributions.
+
 ## Training
 For training this model, mini-batch gradient descent optimizer is used, with learning rate 0.01 and momentum 0.9. Categorical loss Function is used as the loss function, batch size of 64, and I ran it for 50 epochs, resulting in training accuracy of 83%, validation accuracy of 73%. An ealry stop can also be used with regard to validation loss.
 Finalle, I have plotted the accuracy vs epochs with loss function which is shown using matplotlib.pyplot in the loss_plot.py script
