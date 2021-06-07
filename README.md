@@ -5,10 +5,10 @@ B) Converting y_train(labels) into float type.<br />
 C) Using to_categorical() on training labels to use categorical loss as the loss function while training.<br />
 
 ## REFERENCE
-  Title : Very Deep Convolutional Networks for Large-Scale Image Recognition
-  Link : https://arxiv.org/abs/1409.1556
-  Author : Karen Simonyan, Andrew Zisserman
-  Published : 10 Apr 2015 
+  Title : Very Deep Convolutional Networks for Large-Scale Image Recognition <br />
+  Link : https://arxiv.org/abs/1409.1556 <br />
+  Author : Karen Simonyan, Andrew Zisserman <br />
+  Published : 10 Apr 2015 <br />
 
 
 ## Architecture 
@@ -88,7 +88,7 @@ _________________________________________________________________<br/>
 
 So in the end, we get a softmax layer with 10 units of output which will be used to train with the labels.
 
-##LOSS FUNCTION
+## LOSS FUNCTION
 Categorical crossentropy: It is a loss function that is used in multi-class classification tasks. These are tasks where an example can only belong to one out of many possible categories, and the model must decide which one.
 Formally, it is designed to quantify the difference between two probability distributions.
 
