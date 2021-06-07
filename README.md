@@ -1,5 +1,5 @@
 # Usage
-usage: ipykernel_launcher.py [-h] [--learning_rate LEARNING_RATE]<br/>
+usage: ipykernel_launcher.py <br/>[-h] [--learning_rate LEARNING_RATE]<br/>
                              [--dropout DROPOUT] [--regularizer REGULARIZER]<br/>
                              [--epoch EPOCH] [--batch_size BATCH_SIZE]<br/>
                              [--momentum MOMENTUM] [--patience PATIENCE]<br/>
