@@ -117,7 +117,7 @@ Categorical crossentropy: It is a loss function that is used in multi-class clas
 Formally, it is designed to quantify the difference between two probability distributions.
 
 <p align="center">
-  <img src="assets/loss.png" width="500">
+  <img src="assets/categoricalloss.png" width="500">
   </p>
   
 
