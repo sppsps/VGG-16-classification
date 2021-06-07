@@ -19,7 +19,7 @@ optional arguments:<br/>
                         Regularization value for L2<br/>
 ## Contributers:
 - Pranjal Sharma
-- Dhrubajit Basumatary
+- [Dhrubajit Basumatary](https://github.com/dhruvz9)
 
 ## REFERENCE
  - Title : Very Deep Convolutional Networks for Large-Scale Image Recognition <br />
