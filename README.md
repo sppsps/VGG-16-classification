@@ -1,4 +1,6 @@
-# Usage
+# TENSORFLOW IMPLEMENTATION OF VGG CLASSIFICATION
+
+## Usage
 Usage: ipykernel_launcher.py [-h] [--learning_rate LEARNING_RATE]<br/>
                                 [--dropout DROPOUT] [--regularizer REGULARIZER]<br/>
                                 [--epoch EPOCH] [--batch_size BATCH_SIZE]<br/>
