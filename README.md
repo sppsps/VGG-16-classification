@@ -1,8 +1,8 @@
 # Usage
-usage: ipykernel_launcher.py [-h] [--learning_rate LEARNING_RATE]<br/>
-                              &nbsp[--dropout DROPOUT] [--regularizer REGULARIZER]<br/>
-                              &nbsp[--epoch EPOCH] [--batch_size BATCH_SIZE]<br/>
-                              &nbsp[--momentum MOMENTUM] [--patience PATIENCE]<br/>
+usage: ipykernel_launcher.py [-h] [--learning_rate LEARNING_RATE]
+                                [--dropout DROPOUT] [--regularizer REGULARIZER]
+                                [--epoch EPOCH] [--batch_size BATCH_SIZE]
+                                [--momentum MOMENTUM] [--patience PATIENCE]
 optional arguments:
   -h, --help            show this help message and exit
   --learning_rate LEARNING_RATE
@@ -15,8 +15,6 @@ optional arguments:
                         Dropout percentage for the layers
   --regularization REGULARIZATION
                         Regularization value for L2
-  --patience PATIENCE
-                        Patience for earlystop
 # VGG-classification
 This model is implementing the architecture and training techniques used in VGG paper. We used CIFAR10 dataset by keras.<br />The preprocessing :<br />
 A) Dividing all the pixels of images by 225<br />
