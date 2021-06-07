@@ -1,4 +1,4 @@
-
+#TENSORFLOW IMPLEMENTATION OF VGG CLASSIFICATION
 
 ## REFERENCE
   Title : Very Deep Convolutional Networks for Large-Scale Image Recognition <br />
@@ -8,7 +8,7 @@
   
 # Summary
   
-## VGG-classification
+## Introduction
 This model is implementing the architecture and training techniques used in VGG paper. We used CIFAR10 dataset by keras.<br />The preprocessing :<br />
 A) Dividing all the pixels of images by 225<br />
 B) Converting y_train(labels) into float type.<br />
