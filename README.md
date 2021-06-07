@@ -5,15 +5,15 @@ Usage: ipykernel_launcher.py [-h] [--learning_rate LEARNING_RATE]<br/>
                                 [--momentum MOMENTUM] [--patience PATIENCE]<br/>
 optional arguments:<br/>
   -h, --help            show this help message and exit<br/>
-  --learning_rate LEARNING_RATE<br/>
+  --learning_rate LEARNING_RATE
                         learning rate for SGD<br/>
   --epoch EPOCH     max # of epoch<br/>
-  --batch_size BATCH_SIZE<br/>
+  --batch_size BATCH_SIZE
                         # of batch size<br/>
   --momentum MOMENTUM     momentum for SGD<br/>
-  --dropout DROPOUT<br/>
+  --dropout DROPOUT
                         Dropout percentage for the layers<br/>
-  --regularization REGULARIZATION<br/>
+  --regularization REGULARIZATION
                         Regularization value for L2<br/>
 # VGG-classification
 This model is implementing the architecture and training techniques used in VGG paper. We used CIFAR10 dataset by keras.<br />The preprocessing :<br />
